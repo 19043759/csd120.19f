@@ -1,4 +1,11 @@
-@CHARSET "UTF-8";
-body {background-color: #62D800; }
-h1 {color: #ABAB00}
-h2 {color: #ABAB00}
+body {background-color: #62D8BB; }
+   
+   h1 {color: #FF5500;}
+   
+   h2 {color: #FF5500;}
+   
+   a {color: #EE3333;}
+   
+   .byline {color: #B14600;} 
+   
+ #page-copyright {color: #B14600}
