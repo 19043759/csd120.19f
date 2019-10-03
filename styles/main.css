@@ -6,6 +6,12 @@ body {background-color: #62D8BB; }
    
    a {color: #EE3333;}
    
-   .byline {color: #B14600;} 
+   nav a {color: #007700}
    
- #page-copyright {color: #B14600}
+   #useful-links a {color: #770000}
+   
+   .byline {color: rgba(193,66,66,0.5)} 
+   
+   #page-copyright {color: #B14600}
+ 
+ 
