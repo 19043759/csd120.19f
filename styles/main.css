@@ -8,16 +8,42 @@ body {background-color: #62D8BB; }
        font-family: 'Alegreya', sans-serif;
    }
    
-   a {color: #EE3333;}
-   
-   nav a {color: #007700}
-   
-   .byline {color: rgba(193,66,66,0.5)} 
-   
-   #page-copyright {color: #B14600;}
-   
-   body {
-       font-family: 'Open Sans Condensed', sans-serif;
+   a {
+       color: #EE3333;
+       text-decoration: none;
    }
    
+   nav a  {
+       color: #007700;
+   }
    
+   .byline {
+       color: rgba(100,10,10,0.5);
+       font-size: 70%
+   } 
+   
+   #page-copyright {
+       color: #B14600;
+       letter-spacing: 3px;
+       text-transform: uppercase;
+   }
+   
+   body {
+       font-family: 'Open Sans Condensed', sans-serif;     
+   }
+   
+   .bio p {
+       text-indent: 3em;
+   }
+   
+   footer {
+       text-align: center;
+       font-size: 12px
+   }
+   header ul{
+       list-style-type: none;
+   }
+   
+   ul {
+       list-style-type: lower-roman;
+   }
