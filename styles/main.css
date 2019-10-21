@@ -80,5 +80,17 @@ body {
    
    figure {
        box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+       width: 100px;
+       
    }
    
+   hr {
+       
+       width: 75% ;
+       min-width: 300px;
+       margin-top: 3em;
+       margin-bottom: 2em;
+       border-top: solid;
+       border-bottom: dotted;
+       border-radius: 8px
+   }
