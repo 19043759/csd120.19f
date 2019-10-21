@@ -1,4 +1,7 @@
-body {background-color: #62D8BB; }
+body {
+    background-color: #62D8BB; 
+    font-family: 'Open Sans Condensed', sans-serif;  
+    }
    
    h1 {color: #FF5500; 
        font-family:'Alegreya', sans-serif;
@@ -28,22 +31,38 @@ body {background-color: #62D8BB; }
        text-transform: uppercase;
    }
    
-   body {
-       font-family: 'Open Sans Condensed', sans-serif;     
-   }
-   
    .bio p {
        text-indent: 3em;
    }
    
    footer {
        text-align: center;
-       font-size: 12px
+       font-size: 12px;
+       margin-bottom: 2em;
    }
    header ul{
        list-style-type: none;
+       margin: 0;
+       padding: 0;
    }
    
    ul {
        list-style-type: lower-roman;
    }
+   
+   .width-wrap {
+       margin-right: auto;
+       margin-left: auto;
+       max-width: 1024px;
+       padding-right: 2em;
+       padding-left: 2em;
+       margin-bottom: 3em;
+       border-left: 1px solid rgba(0,0,0,0.3);
+       border-right: 1px solid rgba(0,0,0,0.3);
+       border-bottom: 1px solid rgba(0,0,0,0.3);
+       background-color: #53A8AA;
+       box-shadow: 0 0 4px  rgba(0,0,0,0.2);
+         
+   }
+   
+   
