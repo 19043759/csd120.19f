@@ -157,3 +157,24 @@ footer hr {
 .clearMugshot {
     clear: right;
 }
+
+#top {
+    
+}
+
+.back-to-top {
+    text-align: right;
+    margin-right: -0.5em;
+    opacity: 0.5;
+
+}
+
+.back-to-top:hover {
+    opacity: 1.0
+}
+
+.back-to-top a {
+    position: fixed;
+    bottom: 3.5em
+    
+}
