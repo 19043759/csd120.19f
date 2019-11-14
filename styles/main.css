@@ -1,7 +1,25 @@
 body {
     background-color: #62D8BB;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;   
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2em;
     
+}
+
+.bio{
+    grid-column-end: span 2;
+}
+
+.glossary {
+    grid-column-end: span 2;
+}
+
+#useful-links {
+    grid-column-end: span 2;
 }
 
 * {
@@ -93,12 +111,9 @@ header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    float: right;
+    display: flex;
+    justify-content: center;
     
-}
-
-header li {
-    float: left;
 }
 
 ul {
