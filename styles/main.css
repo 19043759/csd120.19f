@@ -1,6 +1,9 @@
 body {
     background-color: #62D8BB;
-    font-family: 'Open Sans Condensed', sans-serif;   
+    font-family: 'Open Sans Condensed', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main {
@@ -91,6 +94,7 @@ footer {
     text-align: center;
     font-size: 12px;
     margin-bottom: 2em;
+    margin: auto;
 }
 
 header {
@@ -132,6 +136,8 @@ ul {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     background-color: #53A8AA;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
 
 }
 
