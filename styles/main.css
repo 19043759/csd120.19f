@@ -229,3 +229,8 @@ footer hr {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
