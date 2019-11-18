@@ -31,3 +31,23 @@ nav a:hover {
     border: none;
     text-decoration: underline;
 }
+.burger,.burger::after, .burger::before {
+    display: block;
+    width: 40px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 5px solid #62D8BB;
+}
+.burger::after, .burger::before{
+    content:"";
+    position: absolute;
+}
+.burger {
+    height: 25px;
+    cursor: pointer;
+    margin-top: 1em;
+    position: relative;
+}
+.burger::after{margin-top: 5px;}
+.burger::befor{margin-bottom: 5px;}
