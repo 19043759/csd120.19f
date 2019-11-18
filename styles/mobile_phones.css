@@ -49,5 +49,5 @@ nav a:hover {
     margin-top: 1em;
     position: relative;
 }
-.burger::after{margin-top: 5px;}
-.burger::befor{margin-bottom: 5px;}
+.burger::after{top: 5px;}
+.burger::before{top: 15px;}
