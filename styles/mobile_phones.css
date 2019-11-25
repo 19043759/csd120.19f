@@ -23,6 +23,9 @@ nav ul {
     padding-bottom: 1em;
     align-items: center;
 }
+nav a {
+    border: none;
+}
 nav a:hover {
     border: none;
     text-decoration: underline;
