@@ -7,6 +7,8 @@
                 <link rel="stylesheet" href="styles/normalize.css">
                 <link rel="stylesheet" href="styles/main.css">
                 <link rel="stylesheet" href="styles/mobile_phones.css" media="screen and (max-width:768px)">
+                <script type="text/javascript" src="js/baguetteBox.js"></script>
+                <link rel="stylesheet" href="styles/baguetteBox.css">
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -15,7 +17,7 @@
                 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
          <meta name="msapplication-TileColor" content="#da532c">
          <meta name="theme-color" content="#ffffff">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link href="https://fonts.googleapis.com/css?family=Alegreya%7COpen+Sans&display=swap" rel="stylesheet">
 
     </head>
@@ -24,24 +26,25 @@
          <div class="width-wrap">
            <header id="top">
             <nav>
-                <div class="burger"></div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="links.html">Links</a></li>
-                    <li><a href="glossary.html">Glossary</a></li>
-                </ul>
+                <input type="checkbox" id="burger-toggle">
+                <label for="burger-toggle" class="burger"></label>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="glossary.html">Glossary</a></li>
+                    </ul>
             </nav>
            </header>
           <main>
-            <section class= "bio"> 
+            <section class= "bio">
                 <h1>Welcome to Nathan's CSD120 Website</h1>
                 <figure class="mugshot">
                     <div class="paperclip"></div>
                         <a href="images/MY.jpg"><img src="images/me_tn.jpg" alt= "Thumbnail Photo of me"></a>
                     <figcaption> Nathan Foglia</figcaption>
                 </figure>
-      
-                    <p> 
+
+                    <p>
                         Hello, and welcome to my first ever web page. My name is Nathan Foglia. I am a new computer programmer
                         and I am eager to learn everthing I can about programming in my short time here at sault college. I am
                         24 years old, taking the Computer Programming course at Sault College.<br><br>
@@ -52,7 +55,7 @@
                         whenever possible. This is so I can learn more about how software works and how to control a server.
                     <p>
             </section>
-            
+
             <section class= "clearMugshot">
                 <h2> My 3 Favourite Songs</h2>
                     <ol>
@@ -61,18 +64,70 @@
                         <li>Baby Blue - Action Bronson
                     </ol>
             </section>
-                 
+
             <section>
-                <h2>Haiku</h2>   
-                <p> 
+                <h2>Haiku</h2>
+                <p>
                     <span style="background-color: #11FF99">
-                        Living the good life<br>                
+                        Living the good life<br>
                         Attitude, Gratitude, love<em>&mdash;</em><br>
                         Living in the <strong>now</strong></span>
                     <span class= "byline"><em>by <strong>Unknown</strong></em></span>
                 </p>
             </section>
-          
+            <section>
+                <h2>My Sault College Courses</h2>
+                <table>
+                    <tr>
+                        <th>Term</th>
+                        <th>Code</th>
+                        <th>Course Name</th>
+                    </tr>
+                    <tr>
+                        <td class= 'odd' rowspan='5'>Fall 2019</td>
+                        <td>CSD120</td>
+                        <td>Intro to Web</td>
+                    </tr>
+                    <tr>
+                        <td>CSO104</td>
+                        <td>Into OS/Lan Admin</td>
+                    </tr>
+                    <tr>
+                        <td>CSD105</td>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>MTH122</td>
+                        <td>Computer Math</td>
+                    </tr>
+                    <tr>
+                        <td>TNY130</td>
+                        <td>Technology/Society</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">Winter 2020</td>
+                        <td>CSA103</td>
+                        <td>Business Applications I</td>
+                    </tr>
+                    <tr>
+                        <td>CSD102</td>
+                        <td>Programming Using C++</td>
+                    </tr>
+                    <tr>
+                        <td>CSD212</td>
+                        <td>Web Scripting Languages</td>
+                    </tr>
+                    <tr>
+                        <td>CSO104</td>
+                        <td>Introduction to LINUX</td>
+                    </tr>
+                    <tr>
+                        <td>CST104</td>
+                        <td>PC Hardware and Networking</td>
+                    </tr>
+                </table>
+            </section>
+
             <section class="gallery">
                 <h2>Photo Gallery</h2>
                     <div class="gallery-thumbnails grey-hover">
@@ -126,28 +181,69 @@
                         </a>
                     </div>
             </section>
-            
+            <section class='survey'>
+                <h2>Survey</h2>
+                <form action="https://formspree.io/mnqnlzwj" method="POST">
+                    <label for="name">What is your name?</label>
+                            <input type = "text" name="name" required= "required">
+                    <label for="email">What is your email?</label>
+                            <input type = "text" name="email" required= "required">
+                    <label for="best_integer">Which integer is best?</label>
+                            <input type = "number" name="best_integer">
+                    <label for="date">Which day is best?</label>
+                            <input type = "date" name="best_day">
+                    <label for="best_bear">Which bear is best?</label>
+                            <select name = "best_bear" form = "best_bear">
+                                <option >Black</option>
+                                <option >Brown</option>
+                                <option >Care</option>
+                                <option >Panda</option>
+                                <option >Polar</option>
+                                <option >Teddy</option>
+                            </select>
+                    <label for="radio">Do you like radio Buttons?</label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="radio">Yes
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="radio">No
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="radio" checked="checked">?
+                                </label>
+                    <label for="life_meaning">What is the meaning of life</label>
+                            <textarea name="life_meaning" rows= "10"
+                            placeholder ="Enter the correct answer here"></textarea>
+                    <button type="submit" value="submit">SEND</button>
+                </form>
+
+            </section>
           </main>
-           
-           
+
+
            <footer>
            <hr>
                 <blockquote>
                     "Success is not final, failure is not fatal: it is the courage to continue that counts"<br><span class= "byline"><em> &mdash;</em> Winston Churchill</span>
                 </blockquote>
-                
+
                 <p id="page-copyright">
                     &copy; 2019<a href="mailto:nathan.foglia2@student.saultcollege.ca?subject=Messgae%20from%20CSD120%20Website"> Nathan Foglia</a>
                 </p>
-            <img class="sc-logo" 
-                    src="images/sc-logo.png" 
-                    sizes="70px" 
-                    srcset="images/sc-logo.png 70w, images/sc-logo@1.5x.png 105w, images/sc-logo@2x.png 140w, images/sc-logo@3x.png 210w, images/sc-logo@4x.png 280w" 
+            <img class="sc-logo"
+                    src="images/sc-logo.png"
+                    sizes="70px"
+                    srcset="images/sc-logo.png 70w, images/sc-logo@1.5x.png 105w, images/sc-logo@2x.png 140w, images/sc-logo@3x.png 210w, images/sc-logo@4x.png 280w"
                     alt="Sault College Logo">
            </footer>
            <div class= "back-to-top">
             <a href =#top>◤</a>
            </div>
          </div>
+       <script>
+       baguetteBox.run('.gallery-thumbnails', {
+        filter: /picsum\.photos\/id/i
+    });
+       </script>
     </body>
 </html>
