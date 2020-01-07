@@ -242,7 +242,8 @@ table {
 
 }
 
-table tr td {
+table tr td,
+table tr th {
     background: rgba(0,0,0,0.05);
     padding: 0.3em 1em;
     border-left: 3px solid #53A8AA;
